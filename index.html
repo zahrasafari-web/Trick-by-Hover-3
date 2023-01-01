@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .txt{
+            width:600px;
+            height: 300px;
+            /* border: 1px solid black; */
+            background-color: white;
+            position: relative;
+        }
+        .txt>h2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            font-size: 120px;
+            justify-content: center;
+            align-items: center;
+            color: purple;
+        }
+        h2{
+            font-size: 120px;
+            color: purple;
+        }
+        .top{
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* background-color: yellow; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: 2s;
+        }
+        .txt:hover .top{
+            width: 100%;
+        }
+        .top>h2{
+            position: absolute;
+            left: 90px;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="txt">
+            <h2>ZAHRA</h2>
+            <div class="top">
+                <h2>ZAHRA</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
